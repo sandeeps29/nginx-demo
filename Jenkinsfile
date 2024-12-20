@@ -43,7 +43,7 @@ pipeline {
 
     post {
         success {
-            echo 'Deployment successful! Site is available at http://localhost:8080'
+            echo 'Deployment successful! Site is available at http://localhost:8081'
         }
         failure {
             echo 'Deployment failed! Check logs for details.'
