@@ -34,7 +34,7 @@ pipeline {
                     sh '''
                         docker stop nginx-demo || true
                         docker rm nginx-demo || true
-                        docker run -d -p 8080:80 --name nginx-demo ${DOCKER_IMAGE}:${DOCKER_TAG}
+                        docker run -d -p 8081:80 --name nginx-demo ${DOCKER_IMAGE}:${DOCKER_TAG}
                     '''
                 }
             }
